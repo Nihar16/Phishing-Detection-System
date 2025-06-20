@@ -10,11 +10,14 @@ A comprehensive AI-powered cybersecurity platform that detects phishing attacks 
 ## 🚀 Core Features
 
 ### Multi-Modal Detection Capabilities
-- **📱 SMS Phishing Detection**: Real-time analysis of text messages for malicious content
-- **📧 Email Phishing Detection**: Advanced NLP-based email content and header analysis  
+
+- **📱 SMS Phishing Detection**: Real-time analysis of text messages for malicious content.
+- **📧 Email Phishing Detection**: Advanced NLP-based email content and header analysis
 - **🌐 URL Phishing Detection**: Machine learning-powered malicious website identification
 - **🖼️ Deepfake Image Detection**: Computer vision models to identify manipulated images
 - **🎥 Deepfake Video Detection**: Advanced video analysis for synthetic media detection
+- **🎙️ Audio Phishing Detection**: Voice-based phishing and social engineering attack detection
+- **🔊 Deepfake Audio Detection**: AI-generated voice and speech synthesis detection
 
 ### Advanced AI Technologies
 - **🧠 Deep Learning Models**: CNNs, RNNs, Transformers, and Vision Transformers
@@ -22,31 +25,32 @@ A comprehensive AI-powered cybersecurity platform that detects phishing attacks 
 - **⚡ Real-Time Processing**: Sub-second detection across all modalities
 - **🎯 Ensemble Learning**: Multiple model combinations for superior performance
 - **📊 Confidence Scoring**: Probabilistic threat assessment with explainable results
+- **🎵 Audio Signal Processing**: Spectral analysis, voice biometrics, and acoustic fingerprinting
 
 ## 🏗️ System Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                    Multi-Modal Input Layer                     │
-├─────────────┬─────────────┬─────────────┬─────────────┬─────────┤
-│     SMS     │    Email    │     URL     │   Images    │  Videos │
-│  Analysis   │  Analysis   │  Analysis   │  Analysis   │Analysis │
-└─────────────┴─────────────┴─────────────┴─────────────┴─────────┘
-       │             │             │             │           │
-┌─────────────┬─────────────┬─────────────┬─────────────┬─────────┐
-│    NLP      │    NLP      │   Feature   │   CNN/      │   3D    │
-│  Pipeline   │  Pipeline   │ Extraction  │   ViT       │  CNN    │
-└─────────────┴─────────────┴─────────────┴─────────────┴─────────┘
-       │             │             │             │           │
-┌─────────────────────────────────────────────────────────────────┐
-│              Multi-Modal Fusion & Decision Engine              │
-├─────────────────────────────────────────────────────────────────┤
-│                    Threat Intelligence DB                      │
-└─────────────────────────────────────────────────────────────────┘
-                              │
-┌─────────────────────────────────────────────────────────────────┐
-│            Response System & Real-Time Alerts                  │
-└─────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                        Multi-Modal Input Layer                               │
+├─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────┤
+│     SMS     │    Email    │     URL     │   Images    │  Videos    │  Audio  │
+│  Analysis   │  Analysis   │  Analysis   │  Analysis   │ Analysis   │Analysis │
+└─────────────┴─────────────┴─────────────┴─────────────┴─────────────┴─────────┘
+       │             │             │             │           │           │
+┌─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────┐
+│    NLP      │    NLP      │   Feature   │   CNN/      │   3D CNN/   │ Signal  │
+│  Pipeline   │  Pipeline   │ Extraction  │   ViT       │ Transformer │ Process │
+└─────────────┴─────────────┴─────────────┴─────────────┴─────────────┴─────────┘
+       │             │             │             │           │           │
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                Multi-Modal Fusion & Decision Engine                          │
+├───────────────────────────────────────────────────────────────────────────────┤
+│                      Threat Intelligence DB                                  │
+└───────────────────────────────────────────────────────────────────────────────┘
+                                      │
+┌───────────────────────────────────────────────────────────────────────────────┐
+│              Response System & Real-Time Alerts                              │
+└───────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ## 📊 Performance Metrics
@@ -90,6 +94,22 @@ A comprehensive AI-powered cybersecurity platform that detects phishing attacks 
 | TimeSformer | 93.7% | 94.3% | 93.1% | 93.7% | 2.3s |
 | **Multi-Frame Fusion** | **94.8%** | **95.4%** | **94.2%** | **94.8%** | **2.0s** |
 
+### Audio Phishing Detection
+| Model | Accuracy | Precision | Recall | F1-Score | Detection Speed |
+|-------|----------|-----------|--------|----------|-----------------|
+| Wav2Vec2-Audio | - | - | - | - | - |
+| HuBERT-Phishing | - | - | - | - | - |
+| Whisper-ASR + BERT | - | - | - | - | - |
+| **Audio-Ensemble** | - | - | - | - | - |
+
+### Deepfake Audio Detection
+| Model | Accuracy | Precision | Recall | F1-Score | Detection Speed |
+|-------|----------|-----------|--------|----------|-----------------|
+| RawNet2 | - | - | - | - | - |
+| WaveFake Detector | - | - | - | - | - |
+| Spectral-CNN | - | - | - | - | - |
+| **Audio-Deepfake Ensemble** | - | - | - | - | - |
+
 ### Overall System Performance
 - **Multi-Modal Ensemble Accuracy**: 97.2%
 - **Average Detection Speed**: 485ms (excluding video processing)
@@ -99,12 +119,23 @@ A comprehensive AI-powered cybersecurity platform that detects phishing attacks 
 
 ## 🛠️ Technology Stack
 
+### Overall System Performance
+- **Multi-Modal Ensemble Accuracy**: 97.2%
+- **Average Detection Speed**: 485ms (excluding video/audio processing)
+- **False Positive Rate**: < 1.8%
+- **Threat Coverage**: 15M+ samples across all modalities
+- **Real-Time Processing**: 1,000+ requests/minute
+- **Audio Processing Capability**: Real-time voice analysis and transcription
+
+## 🛠️ Technology Stack
+
 ### Core Technologies
 - **Backend**: Python 3.9+, FastAPI, Celery
 - **Deep Learning**: PyTorch, TensorFlow, Transformers (Hugging Face)
 - **Computer Vision**: OpenCV, PIL, scikit-image
 - **NLP**: spaCy, NLTK, sentence-transformers
 - **Video Processing**: FFmpeg, MoviePy
+- **Audio Processing**: librosa, torchaudio, pyaudio, soundfile
 - **Database**: PostgreSQL, Redis, MongoDB
 - **Message Queue**: RabbitMQ/Apache Kafka
 
@@ -112,7 +143,8 @@ A comprehensive AI-powered cybersecurity platform that detects phishing attacks 
 - **Text Analysis**: BERT, RoBERTa, DistilBERT
 - **Image Processing**: ResNet, EfficientNet, Vision Transformer
 - **Video Analysis**: 3D-CNN, SlowFast, TimeSformer
-- **Feature Engineering**: TF-IDF, Word2Vec, CLIP embeddings
+- **Audio Analysis**: Wav2Vec2, HuBERT, Whisper, RawNet2
+- **Feature Engineering**: TF-IDF, Word2Vec, CLIP embeddings, MFCC, Spectrograms
 - **Ensemble Methods**: Voting, Stacking, Bayesian Model Averaging
 
 ## 📋 Prerequisites
@@ -122,8 +154,11 @@ A comprehensive AI-powered cybersecurity platform that detects phishing attacks 
 - Node.js 16+ (for frontend)
 - PostgreSQL 13+
 - Redis 6+
-- FFmpeg (for video processing)
+- FFmpeg (for video and audio processing)
+- CUDA Toolkit 11.8+ (for GPU acceleration)
+- Audio drivers and microphone access (for real-time audio analysis)
 - Docker & Docker Compose
+
 
 ## 🚀 Installation
 
