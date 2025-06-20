@@ -5,7 +5,7 @@
 
 # Multi-Modal Phishing Detection System
 
-A comprehensive AI-powered cybersecurity platform that detects phishing attacks across multiple channels including SMS, Email, URLs, Deepfake Images, and Videos. This advanced system leverages deep learning, computer vision, and natural language processing to provide 360-degree protection against modern phishing threats.
+A comprehensive AI-powered cybersecurity platform that detects phishing attacks across multiple channels including SMS, Email, URLs, Deepfake Images, Videos, and Audio. This advanced system leverages deep learning, computer vision, natural language processing, and audio signal processing to provide 360-degree protection against modern phishing threats.
 
 ## 🚀 Core Features
 
